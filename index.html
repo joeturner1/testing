@@ -23,5 +23,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <h1>My First Heading</h1>
 <a href="#" name="button1" title="joebutton" onclick="dataLayer.push({'eventAction': 'button1-click'});" >Button 1</a>
+<a href="#" onclick="
+dataLayer.push({
+    'event': 'myTrackEvent',
+    'eventCategory': 'Videos',
+    'eventAction': 'Play',
+    'eventLabel': 'Gone With the Wind',
+    'eventValue': '4.00'
+});">Play</a>
+ 
 </body>
 </html>
