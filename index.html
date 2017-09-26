@@ -19,12 +19,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <body>
 <a href ="#" name="buttonz" onclick="dataLayer.push({ 'event' :  'trackEvent',  'eventCategory' :  'Social',  'eventAction' :  'Footer',  'eventLabel' :  'Facebook' });">Button1</a>
 
+  // Fire a normal, interaction event 
+dataLayer.event('Category', 'Action', 'Label', 'Value');
+ 
+// Fire a non-interaction event 
+dataLayer.nonInteractionEvent('Category', 'Action', 'Label', 'Value');
+  
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3BXS9P"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <h1>My First Heading</h1>
 <a href ="#" name="buttonz" onclick="dataLayer.push({ 'event' :  'trackEvent',  'eventCategory' :  'Social',  'eventAction' :  'Footer',  'eventLabel' :  'Facebook' });">Button2</a>
+
+dataLayer = require('data-layer-events');
+ 
 
  
 </body>
